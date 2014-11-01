@@ -1,0 +1,11 @@
+@import url("fonts.css");
+
+body
+{
+  text-align: center;
+  font-family: "Caviar Dreams";
+  font-size: 24px;
+  color: #ffffff;
+  background: url("../img/background.png");
+  margin: 16px;
+}

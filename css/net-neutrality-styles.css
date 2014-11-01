@@ -1,14 +1,4 @@
-@font-face
-{
-  font-family: "Caviar Dreams";
-  src: url("../fonts/CaviarDreams.ttf");
-}
-
-@font-face
-{
-  font-family: "Dekiru";
-  src: url("../fonts/Dekiru.ttf");
-}
+@import url("fonts.css");
 
 body
 {
