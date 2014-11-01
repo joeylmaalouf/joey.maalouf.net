@@ -1,0 +1,37 @@
+@font-face
+{
+  font-family: "Sintony";
+  src: url("../fonts/Sintony.otf");
+}
+
+* { margin: 0; padding: 0; }
+body { font-family: "Sintony"; color: #ffffff; background-color: #000000; }
+html { overflow-y: scroll; }
+a { text-decoration: none; }
+a:focus { outline: 0; }
+p { font-size: 15px; }
+#page-wrap { width: 720px; margin: 80px auto; }
+
+.hide
+{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+#organictabs { background: #111; padding: 10px; margin: 0 0 20px 0; -moz-box-shadow: 0 0 5px #666; -webkit-box-shadow: 0 0 5px #666; }
+
+#organictabs .nav { overflow: hidden; margin: 0 0 10px 0; }
+#organictabs .nav li { width: 100px; float: left; margin: 0 10px 0 0; }
+#organictabs .nav li.last { margin-right: 0; }
+#organictabs .nav li a { display: block; padding: 5px; background: #333; color: white; font-size: 16px; text-align: center; border: 0; }
+#organictabs .nav li a:hover { background-color: #888; }
+
+#organictabs ul { list-style: none; }
+#organictabs ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+#organictabs ul li a:hover { background: #66cc00; color: white; }
+#organictabs ul li:last-child a { border: none; }
+
+#organictabs ul li.nav-java a.current, #organictabs ul.code-java li a:hover { background-color: #d00000; color: white; }
+#organictabs ul li.nav-cs a.current, #organictabs ul.code-cs li a:hover { background-color: #0585f5; color: white; }
+#organictabs ul li.nav-cpp a.current, #organictabs ul.code-cpp li a:hover { background-color: #8901b0; color: white; }

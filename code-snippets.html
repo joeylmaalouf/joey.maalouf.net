@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="css/simptip.css">
+  <link rel="stylesheet" type="text/css" href="css/vibrant-ink.css">
+  <link rel="stylesheet" type="text/css" href="css/code-snippets-styles.css">
+
+  <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script type="text/javascript" src="js/organictabs.jquery.js"></script>
+  <script type="text/javascript" src="js/simple-expand.js"></script>
+  <script type="text/javascript" src="js/prettify.js"></script>
+
+  <title>Code Snippets</title>
+  <meta name="author" content="Joey L. Maalouf" />
+  <meta charset="UTF-8">
+
+  <script type="text/javascript">
+    $(function()
+    {
+      $("#organictabs").organicTabs({"speed": 100});
+      $(".expander").simpleexpand();
+    });
+  </script>
+</head>
+
+<body onload="prettyPrint()">
+  <div id="page-wrap">
+    <h1 class="simptip-position-top" data-tooltip="In Java, C#, and C++!">Code Snippets</h1>
+    <br>
+    <a class="pure-button expander" href="#">first snippet</a>
+    <div id="organictabs" class="content">
+      <ul class="nav">
+        <li class="nav-java"><a href="#code-java" class="current">Java</a></li>
+        <li class="nav-cs"><a href="#code-cs">C#</a></li>
+        <li class="nav-cpp last"><a href="#code-cpp">C++</a></li>
+      </ul>
+      <div class="list-wrap">
+        <ul id="code-java">
+          <pre class="prettyprint">
+java
+          </pre>
+        </ul>
+        <ul id="code-cs" class="hide">
+          <pre class="prettyprint">
+c#
+          </pre>
+        </ul>
+        <ul id="code-cpp" class="hide">
+          <pre class="prettyprint">
+c++
+          </pre>
+        </ul>
+      </div>
+    </div>
+    <p>This is some content below the tabs. I will be moved up or down to accommodate the tabbed area above me. How cool is that?</p>
+  </div>
+</body>
+</html>
