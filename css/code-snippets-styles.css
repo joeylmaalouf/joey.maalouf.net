@@ -59,6 +59,7 @@ p
 #organictabs ul li a:hover { background: #66cc00; color: white; }
 #organictabs ul li:last-child a { border: none; }
 
-#organictabs ul li.nav-java a.current, #organictabs ul.code-java li a:hover { background-color: #d00000; color: white; }
-#organictabs ul li.nav-cs a.current, #organictabs ul.code-cs li a:hover { background-color: #0585f5; color: white; }
-#organictabs ul li.nav-cpp a.current, #organictabs ul.code-cpp li a:hover { background-color: #8901b0; color: white; }
+#organictabs ul li.nav-java a.current, #organictabs ul.code-java li a:hover { background-color: #d00000; color: black; }
+#organictabs ul li.nav-cs a.current, #organictabs ul.code-cs li a:hover { background-color: #0585f5; color: black; }
+#organictabs ul li.nav-cpp a.current, #organictabs ul.code-cpp li a:hover { background-color: #8901b0; color: black; }
+#organictabs ul li.nav-py a.current, #organictabs ul.code-py li a:hover { background-color: #ffd900; color: black; }
