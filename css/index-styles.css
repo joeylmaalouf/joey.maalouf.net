@@ -1,12 +1,29 @@
 @import url("fonts.css");
 
+div { height: 25%; }
+html, body { height: 100%; }
 body
 {
   text-align: center;
+  align: center;
   font-family: "Caviar Dreams";
-  font-size: 24px;
+  font-size: 32px;
   color: #ffffff;
-  margin: 16px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/background.png");
-  background-attachment: fixed;
+}
+
+#div1 { background: linear-gradient(rgba(000, 000, 000, 0.2), rgba(128, 000, 000, 0.2)), url("../img/background.png"); }
+#div2 { background: linear-gradient(rgba(128, 000, 000, 0.2), rgba(000, 128, 000, 0.2)), url("../img/background.png"); }
+#div3 { background: linear-gradient(rgba(000, 128, 000, 0.2), rgba(000, 000, 128, 0.2)), url("../img/background.png"); }
+#div4 { background: linear-gradient(rgba(000, 000, 128, 0.2), rgba(000, 000, 000, 0.2)), url("../img/background.png"); }
+
+img.displayed
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pure-u-0
+{
+	width: 0%
 }

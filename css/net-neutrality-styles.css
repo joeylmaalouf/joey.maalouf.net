@@ -6,8 +6,7 @@ body
   font-family: "Caviar Dreams";
   font-size: 32px;
   color: #ffffff;
-  background: linear-gradient(rgba(0, 0, 64, 0.3), rgba(0, 0, 64, 0.3)), url("../img/background.png");
-  background-attachment: fixed;
+  background: linear-gradient(rgba(64, 0, 64, 0.2), rgba(64, 0, 64, 0.2)), url("../img/background.png");
 }
 
 h1
