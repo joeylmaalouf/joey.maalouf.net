@@ -11,6 +11,7 @@ body
   font-family: "Sintony";
   color: #ffffff;
   background: linear-gradient(rgba(0, 64, 0, 0.3), rgba(0, 64, 0, 0.3)), url("../img/background.png");
+  background-attachment: fixed;
 }
 
 html
