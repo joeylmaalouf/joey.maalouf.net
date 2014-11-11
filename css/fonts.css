@@ -1,5 +1,11 @@
 @font-face
 {
+  font-family: "Aller";
+  src: url("../font/Aller.ttf");
+}
+
+@font-face
+{
   font-family: "Caviar Dreams";
   src: url("../font/CaviarDreams.ttf");
 }
@@ -12,8 +18,8 @@
 
 @font-face
 {
-  font-family: "Aller";
-  src: url("../font/Aller.ttf");
+  font-family: "Envy Code R";
+  src: url("../font/EnvyCodeR.ttf");
 }
 
 @font-face
@@ -22,8 +28,16 @@
   src: url("../font/Sintony.otf");
 }
 
+@font-face
+{
+  font-family: "Ubuntu Mono";
+  src: url("../font/UbuntuMono.ttf");
+}
+
+/*
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"]
 {
     font-family: "Caviar Dreams";
 }
+*/
