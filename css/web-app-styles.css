@@ -1,0 +1,20 @@
+@import url("fonts.css");
+
+body
+{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Sintony";
+  font-size: 3vmin;
+  color: #ffffff;
+  background: linear-gradient(rgba(255, 128, 0, 0.4), rgba(255, 128, 0, 0.4)), url("../img/background.png");
+}
+
+div#unityPlayer
+{
+  margin: auto;
+  cursor: default;
+  width: 960px;
+  height: 600px;
+}

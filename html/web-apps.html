@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/web-app-styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Apps</title>
+  <meta name="author" content="Joey L. Maalouf"/>
+  <meta charset="UTF-8">
+  <script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+  <script type="text/javascript">
+    <!--
+    var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+    if (document.location.protocol == 'https:')
+      unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+    document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+    -->
+  </script>
+  <script type="text/javascript">
+    <!--
+    var config = {width: 960, height: 600,  params: { enableDebugging:"0" } };
+    var u = new UnityObject2(config);
+    jQuery(function() { u.initPlugin(jQuery("#unityPlayer")[0], "HUG_WebPlayer.unity3d"); });
+    -->
+  </script>
+</head>
+<body>
+  <p>My <a href="https://github.com/joeylmaalouf/hello-unity-game">first experiment</a> with Unity:</p>
+  <div id="unityPlayer"></div>
+</body>
+</html>
