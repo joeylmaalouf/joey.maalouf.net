@@ -22,8 +22,8 @@
   
     jQuery(function()
     {
-      var $missingScreen = jQuery("#unityPlayer").find(".missing");
-      var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+      var $missingScreen = jQuery("#unityPlayer1").find(".missing");
+      var $brokenScreen = jQuery("#unityPlayer1").find(".broken");
       $missingScreen.hide();
       $brokenScreen.hide();
   
@@ -58,16 +58,80 @@
           break;
         }
       });
-      u.initPlugin(jQuery("#unityPlayer")[0], "HUG_WebPlayer.unity3d");
+      u.initPlugin(jQuery("#unityPlayer1")[0], "HUG_WebPlayer.unity3d");
+    });
+    -->
+  </script>
+  <script type="text/javascript">
+    <!--
+    var config = { width: 960, height: 600, params: { enableDebugging:"0" } };
+    var u = new UnityObject2(config);
+  
+    jQuery(function()
+    {
+      var $missingScreen = jQuery("#unityPlayer2").find(".missing");
+      var $brokenScreen = jQuery("#unityPlayer2").find(".broken");
+      $missingScreen.hide();
+      $brokenScreen.hide();
+  
+      u.observeProgress(function (progress)
+      {
+        switch(progress.pluginStatus)
+        {
+          case "broken":
+          $brokenScreen.find("a").click(function (e)
+          {
+            e.stopPropagation();
+            e.preventDefault();
+            u.installPlugin();
+            return false;
+          });
+          $brokenScreen.show();
+          break;
+          case "missing":
+          $missingScreen.find("a").click(function (e)
+          {
+            e.stopPropagation();
+            e.preventDefault();
+            u.installPlugin();
+            return false;
+          });
+          $missingScreen.show();
+          break;
+          case "installed":
+          $missingScreen.remove();
+          break;
+          case "first":
+          break;
+        }
+      });
+      u.initPlugin(jQuery("#unityPlayer2")[0], "SnakeWebPlayer.unity3d");
     });
     -->
   </script>
 </head>
 <body>
   <p>My <a href="https://github.com/joeylmaalouf/hello-unity-game">first experiment</a> with Unity:</p>
-  <button title="(click) to toggle visibility)" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/hide</button>
-  <div id="spoiler" style="display:none">
-    <div id="unityPlayer">
+  <button title="(click) to toggle visibility)" type="button" onclick="if(document.getElementById('spoiler1') .style.display=='none') {document.getElementById('spoiler1') .style.display=''}else{document.getElementById('spoiler1') .style.display='none'}">Show/hide</button>
+  <div id="spoiler1" style="display:none">
+    <div id="unityPlayer1">
+      <div class="missing">
+        <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+          <img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+        </a>
+      </div>
+      <div class="broken">
+        <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+          <img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>A <a href="https://github.com/joeylmaalouf/2.5d-snake-game">snake game</a> with Unity:</p>
+  <button title="(click) to toggle visibility)" type="button" onclick="if(document.getElementById('spoiler2') .style.display=='none') {document.getElementById('spoiler2') .style.display=''}else{document.getElementById('spoiler2') .style.display='none'}">Show/hide</button>
+  <div id="spoiler2" style="display:none">
+    <div id="unityPlayer2">
       <div class="missing">
         <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
           <img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
