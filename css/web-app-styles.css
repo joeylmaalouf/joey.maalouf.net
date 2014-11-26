@@ -11,7 +11,7 @@ body
   background: linear-gradient(rgba(255, 128, 0, 0.4), rgba(255, 128, 0, 0.4)), url("../img/background.png");
 }
 
-div#unityPlayer
+div#unityPlayer1, div#unityPlayer2
 {
   margin: auto;
   cursor: default;
