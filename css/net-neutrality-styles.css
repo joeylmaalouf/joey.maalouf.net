@@ -5,6 +5,7 @@ body
   text-align: justify;
   font-family: "Sintony";
   font-size: 3vmin;
+  line-height: 140%;
   color: #ffffff;
   background: linear-gradient(rgba(64, 0, 64, 0.2), rgba(64, 0, 64, 0.2)), url("../img/background.png");
   margin: 16vmin 32vmin;
@@ -13,12 +14,5 @@ body
 h1
 {
   text-align: center;
-  font-size: 8vmin;
-}
-
-.section
-{
-  text-align:center;
-  font-size: 24px;
-  width: 75%;
+  font-size: 6vmin;
 }
