@@ -10,6 +10,11 @@ body
   color: #ffffff;
 }
 
+h1
+{
+  font-size: 6vmin;
+}
+
 #div1 { background: linear-gradient(rgba(000, 000, 000, 0.25), rgba(128, 000, 000, 0.25)), url("../img/background.png"); }
 #div2 { background: linear-gradient(rgba(128, 000, 000, 0.25), rgba(000, 128, 000, 0.25)), url("../img/background.png"); }
 #div3 { background: linear-gradient(rgba(000, 128, 000, 0.25), rgba(000, 000, 128, 0.25)), url("../img/background.png"); }
