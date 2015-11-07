@@ -24,6 +24,12 @@
 
 @font-face
 {
+  font-family: "Hack";
+  src: url("../font/Hack.ttf");
+}
+
+@font-face
+{
   font-family: "Knockout";
   src: url("../font/Knockout.ttf");
 }
