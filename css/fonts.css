@@ -1,47 +1,39 @@
-@font-face
-{
+@font-face {
   font-family: "Aller";
   src: url("../font/Aller.ttf");
 }
 
-@font-face
-{
+@font-face {
   font-family: "Caviar Dreams";
   src: url("../font/CaviarDreams.ttf");
 }
 
-@font-face
-{
+@font-face {
   font-family: "Dekiru";
   src: url("../font/Dekiru.ttf");
 }
 
-@font-face
-{
+@font-face {
   font-family: "Envy Code R";
   src: url("../font/EnvyCodeR.ttf");
 }
 
-@font-face
-{
+@font-face {
   font-family: "Hack";
   src: url("../font/Hack.ttf");
 }
 
-@font-face
-{
+@font-face {
   font-family: "Knockout";
   src: url("../font/Knockout.ttf");
 }
 
-@font-face
-{
+@font-face {
   font-family: "Sintony";
   src: url("../font/Sintony.otf");
 }
 
-@font-face
-{
+@font-face {
   font-family: "Ubuntu Mono";
   src: url("../font/UbuntuMono.ttf");
 }

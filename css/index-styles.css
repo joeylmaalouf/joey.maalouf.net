@@ -2,16 +2,14 @@
 
 div { height: 25%; }
 html, body { height: 100%; }
-body
-{
+body {
   text-align: center;
   font-family: "Caviar Dreams";
   font-size: 4.5vmin;
   color: #ffffff;
 }
 
-h1
-{
+h1 {
   font-size: 6vmin;
 }
 
@@ -20,17 +18,14 @@ h1
 #div3 { background: linear-gradient(rgba(000, 128, 000, 0.25), rgba(000, 000, 128, 0.25)), url("../img/background.png"); }
 #div4 { background: linear-gradient(rgba(000, 000, 128, 0.25), rgba(000, 000, 000, 0.25)), url("../img/background.png"); }
 
-a
-{
+a {
   color: #FF8800;
 }
 
-a:link, a:visited
-{
+a:link, a:visited {
   text-decoration: none;
 }
 
-a:hover, a:active
-{
+a:hover, a:active {
   text-decoration: underline;
 }
