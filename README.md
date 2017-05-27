@@ -1,4 +1,3 @@
-joey.maalouf.net
-================
+## My personal website
 
-My personal website.
+Currently located at [jmaalouf.com](http://jmaalouf.com/)!
